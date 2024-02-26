@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 2246503078
+CRC: 3001246477
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: b673eb2e71d3167e4349ccf35196640f
+    Hash: f38333d82b01c51e0c8ad0e5acfc2ca9
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 8c4ce7f45c2f841c8bc266e86eacca54
+    Hash: 308392b83816ee199a9d616358b4f302
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: b673eb2e71d3167e4349ccf35196640f
+    Hash: f38333d82b01c51e0c8ad0e5acfc2ca9
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -31,8 +31,6 @@ ClassTypes:
 - Class: 54
   Script: {instanceID: 0}
 - Class: 65
-  Script: {instanceID: 0}
-- Class: 74
   Script: {instanceID: 0}
 - Class: 82
   Script: {instanceID: 0}
@@ -63,8 +61,6 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: d3cecf05b78b173605122a700874719c, type: 3}
 - Class: 114
-  Script: {fileID: 303040638, guid: 2f27b4788c8f99840b6de8f16ba23069, type: 3}
-- Class: 114
   Script: {fileID: -469864830, guid: 2f27b4788c8f99840b6de8f16ba23069, type: 3}
 - Class: 115
   Script: {instanceID: 0}
@@ -94,12 +90,11 @@ SerializeReferenceClassIdentifiers:
 Assets:
 - Assets/ExampleEnemy/Effects/Explosion.prefab
 - Assets/ExampleEnemy/Audio/footstep6.wav
-- Assets/ExampleEnemy/ExampleEnemy.asset
+- Assets/ExampleEnemy/Materials/MapDotRed.mat
 - Assets/ExampleEnemy/Audio/footstep7.wav
 - Assets/ExampleEnemy/Materials/Textures/rock-alpha.png
 - Assets/ExampleEnemy/Bestiary/ReplicatorEnemyTN.asset
 - Assets/ExampleEnemy/Materials/smoke3.mat
-- Assets/ExampleEnemy/Bestiary/ExampleEnemyTK.asset
 - Assets/ExampleEnemy/Audio/grinding.wav
 - Assets/ExampleEnemy/Audio/footstep3.wav
 - Assets/ExampleEnemy/ReplicatorEnemyObj.prefab
@@ -111,7 +106,7 @@ Assets:
 - Assets/ExampleEnemy/Audio/footstep5.wav
 - Assets/ExampleEnemy/Audio/startup.wav
 - Assets/ExampleEnemy/ReplicatorEnemy.asset
-- Assets/ExampleEnemy/ExampleEnemyObj.prefab
+- Assets/ExampleEnemy/Models/replicator.fbx
 - Assets/ExampleEnemy/Materials/TankGrey.mat
 - Assets/ExampleEnemy/Effects/Grind.prefab
 - Assets/ExampleEnemy/Bestiary/ReplicatorEnemyTK.asset
@@ -121,9 +116,8 @@ Assets:
 - Assets/ExampleEnemy/Materials/Textures/smoke3.png
 - Assets/ExampleEnemy/Audio/death.wav
 - Assets/ExampleEnemy/Audio/footstep2.wav
-- Assets/ExampleEnemy/Bestiary/ExampleEnemyTN.asset
-- Assets/ExampleEnemy/Materials/wing.mat
 - Assets/ExampleEnemy/Audio/footstep8.wav
+- Assets/ExampleEnemy/Materials/wing.mat
 - Assets/ExampleEnemy/Audio/footstep1.wav
 - Assets/ExampleEnemy/ReplicatorEnemyAnimator.controller
 Dependencies: []

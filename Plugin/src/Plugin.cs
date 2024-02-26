@@ -41,15 +41,6 @@ namespace MelsEnemyPack
             //Logger.LogInfo($"sample-pf {SampleEnemy.enemyPrefab} !");
             Logger.LogInfo($"repl-pf {ReplicatorEnemy.enemyPrefab} !");
 
-            // Network Prefabs need to be registered first. See https://docs-multiplayer.unity3d.com/netcode/current/basics/object-spawning/
-            //NetworkPrefabs.RegisterNetworkPrefab(SampleEnemy.enemyPrefab); 
-            NetworkPrefabs.RegisterNetworkPrefab(ReplicatorEnemy.enemyPrefab);
-
-            //RegisterEnemy(SampleEnemy, 100, LevelTypes.All, SpawnType.Outside, tlTerminalNodeEX, tlTerminalKeywordEX);
-            RegisterEnemy(ReplicatorEnemy, BoundConfig.SpawnWeight.Value, LevelTypes.All, SpawnType.Default, tlTerminalNodeRT, tlTerminalKeywordRT);
-
-            Logger.LogInfo($"Plugin {PluginInfo.PLUGIN_GUID} is loaded!");
-
             // Required by https://github.com/EvaisaDev/UnityNetcodePatcher maybe?
             var types = Assembly.GetExecutingAssembly().GetTypes();
             foreach (var type in types)
@@ -64,6 +55,16 @@ namespace MelsEnemyPack
                     }
                 }
             }
+            // Network Prefabs need to be registered first. See https://docs-multiplayer.unity3d.com/netcode/current/basics/object-spawning/
+            //NetworkPrefabs.RegisterNetworkPrefab(SampleEnemy.enemyPrefab); 
+            NetworkPrefabs.RegisterNetworkPrefab(ReplicatorEnemy.enemyPrefab);
+
+            //RegisterEnemy(SampleEnemy, 100, LevelTypes.All, SpawnType.Outside, tlTerminalNodeEX, tlTerminalKeywordEX);
+            RegisterEnemy(ReplicatorEnemy, BoundConfig.SpawnWeight.Value, LevelTypes.All, SpawnType.Default, tlTerminalNodeRT, tlTerminalKeywordRT);
+
+            Logger.LogInfo($"Plugin {PluginInfo.PLUGIN_GUID} is loaded!");
+
+            Assets.MainAssetBundle.Unload(false);
         }
     }
 
@@ -72,7 +73,8 @@ namespace MelsEnemyPack
         public static void PopulateAssets() {
             string sAssemblyLocation = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 
-            MainAssetBundle = AssetBundle.LoadFromFile(Path.Combine(sAssemblyLocation, "mels.lethalbundle"));
+            if(MainAssetBundle == null)
+                MainAssetBundle = AssetBundle.LoadFromFile(Path.Combine(sAssemblyLocation, "mels.lethalbundle"));
             if (MainAssetBundle == null) {
                 Plugin.Logger.LogError("Failed to load custom assets.");
                 return;

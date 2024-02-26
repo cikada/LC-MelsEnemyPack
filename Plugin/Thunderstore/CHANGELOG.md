@@ -1,3 +1,9 @@
+## 1.0.5
+
+- Custom bestiary model
+- Removed ExampleEnemy from package for smaller footprint
+- Another attempt at fixing an issue for certain users with loading the package
+
 ## 1.0.4
 
 - Refactored how config is done due to a potential conflict
