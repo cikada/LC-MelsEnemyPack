@@ -1,0 +1,129 @@
+ManifestFileVersion: 0
+CRC: 2246503078
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b673eb2e71d3167e4349ccf35196640f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 8c4ce7f45c2f841c8bc266e86eacca54
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: b673eb2e71d3167e4349ccf35196640f
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 82
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 70b342d8ce5c2fd48b8fa3147d48d1d1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: aeda7bfbf984f2a4da5ab4b8967b115d, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 65d3fcb39dd67306e9bb17a603308070, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 04f75356a7e9c978bddc7d568e58a50b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3c36d0a92cbb1f26a39169ef0eae393a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6d7127b8f98ca8ec9896b384a71d39a2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0e80ae96b3eb9177eea5c8f9dadbcda1, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fff0960ef4ea6e04eac66b4a7fd2189d, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d3cecf05b78b173605122a700874719c, type: 3}
+- Class: 114
+  Script: {fileID: 303040638, guid: 2f27b4788c8f99840b6de8f16ba23069, type: 3}
+- Class: 114
+  Script: {fileID: -469864830, guid: 2f27b4788c8f99840b6de8f16ba23069, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 195
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 329
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: AISearchRoutine
+- AssemblyName: Assembly-CSharp
+  ClassName: EnemyBehaviourState
+- AssemblyName: Unity.Animation.Rigging
+  ClassName: UnityEngine.Animations.Rigging.RigLayer
+- AssemblyName: Unity.Animation.Rigging
+  ClassName: UnityEngine.Animations.Rigging.TwoBoneIKConstraintData
+Assets:
+- Assets/ExampleEnemy/Effects/Explosion.prefab
+- Assets/ExampleEnemy/Audio/footstep6.wav
+- Assets/ExampleEnemy/ExampleEnemy.asset
+- Assets/ExampleEnemy/Audio/footstep7.wav
+- Assets/ExampleEnemy/Materials/Textures/rock-alpha.png
+- Assets/ExampleEnemy/Bestiary/ReplicatorEnemyTN.asset
+- Assets/ExampleEnemy/Materials/smoke3.mat
+- Assets/ExampleEnemy/Bestiary/ExampleEnemyTK.asset
+- Assets/ExampleEnemy/Audio/grinding.wav
+- Assets/ExampleEnemy/Audio/footstep3.wav
+- Assets/ExampleEnemy/ReplicatorEnemyObj.prefab
+- Assets/ExampleEnemy/Audio/attack.wav
+- Assets/ExampleEnemy/Audio/thonk.mp3
+- Assets/ExampleEnemy/Effects/Poof.prefab
+- Assets/ExampleEnemy/Materials/rock-alpha.mat
+- Assets/ExampleEnemy/Audio/callforhelp.mp3
+- Assets/ExampleEnemy/Audio/footstep5.wav
+- Assets/ExampleEnemy/Audio/startup.wav
+- Assets/ExampleEnemy/ReplicatorEnemy.asset
+- Assets/ExampleEnemy/ExampleEnemyObj.prefab
+- Assets/ExampleEnemy/Materials/TankGrey.mat
+- Assets/ExampleEnemy/Effects/Grind.prefab
+- Assets/ExampleEnemy/Bestiary/ReplicatorEnemyTK.asset
+- Assets/ExampleEnemy/Materials/atom_particle.mat
+- Assets/ExampleEnemy/Audio/footstep4.wav
+- Assets/ExampleEnemy/Materials/Textures 1/wing.png
+- Assets/ExampleEnemy/Materials/Textures/smoke3.png
+- Assets/ExampleEnemy/Audio/death.wav
+- Assets/ExampleEnemy/Audio/footstep2.wav
+- Assets/ExampleEnemy/Bestiary/ExampleEnemyTN.asset
+- Assets/ExampleEnemy/Materials/wing.mat
+- Assets/ExampleEnemy/Audio/footstep8.wav
+- Assets/ExampleEnemy/Audio/footstep1.wav
+- Assets/ExampleEnemy/ReplicatorEnemyAnimator.controller
+Dependencies: []

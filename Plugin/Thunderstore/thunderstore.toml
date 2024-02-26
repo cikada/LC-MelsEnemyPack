@@ -1,0 +1,36 @@
+[config]
+schemaVersion = "1.0.4"
+
+[general]
+repository = "https://thunderstore.io"
+
+[package]
+description = "Mels additional enemies for Lethal Company."
+websiteUrl = ""
+containsNsfwContent = false
+[package.dependencies]
+BepInEx-BepInExPack = "5.4.2100"
+Evaisa-LethalLib = "0.14.2"
+
+[build]
+icon = "./icon.png"
+readme = "./README.md"
+outdir = "./Packages"
+
+[[build.copy]]
+source = "../bin/Release/netstandard2.1/MelsEnemyPack.dll"
+target = "plugins/MelsEnemyPack/"
+
+[[build.copy]]
+source = "../../UnityProject/AssetBundles/StandaloneWindows/mels.lethalbundle"
+target = "plugins/MelsEnemyPack/"
+
+[[build.copy]]
+source = "./CHANGELOG.md"
+target = "/"
+
+[publish]
+communities = [ "lethal-company", ]
+[publish.categories]
+# Get the list of categories from https://thunderstore.io/api/experimental/community/lethal-company/category/
+lethal-company = [ "bepinex", "clientside", "serverside", "monsters", "mods", ]

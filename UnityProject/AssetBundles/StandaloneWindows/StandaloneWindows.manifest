@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 3435767312
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: mels.lethalbundle
+      Dependencies: {}
