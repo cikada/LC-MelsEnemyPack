@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 3001246477
+CRC: 2219601413
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: f38333d82b01c51e0c8ad0e5acfc2ca9
+    Hash: e897925cb28525aab2100e9aa7ec38b2
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 308392b83816ee199a9d616358b4f302
+    Hash: 08f61ed1b6ab80d95baf467c2e1ca730
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: f38333d82b01c51e0c8ad0e5acfc2ca9
+    Hash: e897925cb28525aab2100e9aa7ec38b2
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -41,6 +41,8 @@ ClassTypes:
 - Class: 95
   Script: {instanceID: 0}
 - Class: 114
+  Script: {fileID: 458769181, guid: 2f27b4788c8f99840b6de8f16ba23069, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 70b342d8ce5c2fd48b8fa3147d48d1d1, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: aeda7bfbf984f2a4da5ab4b8967b115d, type: 3}
@@ -62,6 +64,8 @@ ClassTypes:
   Script: {fileID: 11500000, guid: d3cecf05b78b173605122a700874719c, type: 3}
 - Class: 114
   Script: {fileID: -469864830, guid: 2f27b4788c8f99840b6de8f16ba23069, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7711ff14ea4c453ed631fa989a6d9545, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 137
@@ -95,10 +99,12 @@ Assets:
 - Assets/ExampleEnemy/Materials/Textures/rock-alpha.png
 - Assets/ExampleEnemy/Bestiary/ReplicatorEnemyTN.asset
 - Assets/ExampleEnemy/Materials/smoke3.mat
+- Assets/ExampleEnemy/Bestiary/ReplicatorSpin.webm
 - Assets/ExampleEnemy/Audio/grinding.wav
 - Assets/ExampleEnemy/Audio/footstep3.wav
 - Assets/ExampleEnemy/ReplicatorEnemyObj.prefab
 - Assets/ExampleEnemy/Audio/attack.wav
+- Assets/ExampleEnemy/SpringMine.asset
 - Assets/ExampleEnemy/Audio/thonk.mp3
 - Assets/ExampleEnemy/Effects/Poof.prefab
 - Assets/ExampleEnemy/Materials/rock-alpha.mat
@@ -117,7 +123,8 @@ Assets:
 - Assets/ExampleEnemy/Audio/death.wav
 - Assets/ExampleEnemy/Audio/footstep2.wav
 - Assets/ExampleEnemy/Audio/footstep8.wav
+- Assets/ExampleEnemy/SpringMine.prefab
 - Assets/ExampleEnemy/Materials/wing.mat
-- Assets/ExampleEnemy/Audio/footstep1.wav
 - Assets/ExampleEnemy/ReplicatorEnemyAnimator.controller
+- Assets/ExampleEnemy/Audio/footstep1.wav
 Dependencies: []

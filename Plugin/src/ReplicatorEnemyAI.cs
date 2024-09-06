@@ -11,6 +11,7 @@ using UnityEngine.AI;
 using UnityEngine.UIElements.Experimental;
 using UnityEngine.UIElements;
 using HarmonyLib;
+using UnityEngine.TextCore.Text;
 
 namespace MelsEnemyPack
 {
@@ -1419,7 +1420,7 @@ namespace MelsEnemyPack
                             if (DesiredDestination == Vector3.zero)
                             {
                                 //Pick whatever is far from us
-                                DesiredDestination = ChooseFarthestNodeFromPosition(base.transform.position, avoidLineOfSight: true, 0, log: true).position;
+                                DesiredDestination = ChooseFarthestNodeFromPosition(base.transform.position, true, 0, false, 50, true).position;
                             }
                         }
                         //Roam nearby
@@ -1509,7 +1510,7 @@ namespace MelsEnemyPack
                             PositionToAvoid = targetPlayer.transform.position;
                         }
                         //Same basic idea as bracken - Might need tweaking?
-                        Transform transform = ChooseFarthestNodeFromPosition(PositionToAvoid, avoidLineOfSight: true, 0, log: true);
+                        DesiredDestination = ChooseFarthestNodeFromPosition(PositionToAvoid, true, 0, false, 50, true).position;
                         if (transform != null)
                         {
                             DesiredDestination = transform.position;
@@ -1926,7 +1927,7 @@ Events:
             }
         }
 
-        public override void HitEnemy(int force = 1, PlayerControllerB playerWhoHit = null, bool playHitSFX = false)
+        public override void HitEnemy(int force = 1, PlayerControllerB playerWhoHit = null, bool playHitSFX = false, int hitID = -1)
         {
             base.HitEnemy(force, playerWhoHit, playHitSFX);
             if(isEnemyDead)

@@ -1,3 +1,11 @@
+## 1.0.7
+
+- Fixed the enemy no longer working due to game updates
+
+## 1.0.6
+
+- Fixed an issue with audio that broke in 1.0.5's fix
+
 ## 1.0.5
 
 - Custom bestiary model
